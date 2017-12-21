@@ -27,10 +27,18 @@ function onReady() {
     //attach the li to the ul
     toDoList.appendChild(newLi);
 
+    let checkDelete = document.createElement('delete');
+    checkDelete.type = "checkbox";
+    newLi.appendChild(checkbox);
+
     //empty the input
     newToDoText.value = '';
 
+
+
   });
+
+
 }
 window.onload = function () {
   onReady();
